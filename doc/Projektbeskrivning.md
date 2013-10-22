@@ -1,29 +1,33 @@
-
-# Projektnamn här
+# Webbutvecklings referens (Web Development Reference)
 Projektmedlemmar: 
-[tstjostudent](https://github.com/tstjostudent), [xx222yy](https://github.com/tstjostudent), [yy222xx](https://github.com/tstjostudent)
-
-*Lista alla medlemmar ovan. Ni behöver inte ange fullständiga namn utan länk till GitHub-konto räcker.*
+[jh222xk](https://github.com/jh222xk)
 
 [Exekverbar version av projektet](http://tstjostudent.github.io/Projektet)
 
-*Länka till en körbar version av projektet ovan. Exempelvis kan ni skapa en gh-pages-branch på samma sätt som i Uppgift 1.1, laboration 1.*
-
 ## Beskrivning av projektet
-*En kort och koncis beskrivning av projektet. Vad är det ni vill skapa? Varför? Hur fick ni idén?*
+Tanken med projektet är att bygga en sajt för att visa upp hur man gör olika saker i olika språk som **CSS3**, **HTML5**
+och så vidare. Man skulle kunna benämna det som en referens för en skara olika språk.
+
+### Varför?
+Vill ha en enkel, responsiv sajt som man enkelt kan navigera till oavsett plattform och enhet.
+Ska vara enkelt att komma in och kika på exempel på hur man gör saker snabbt och enkelt.
 
 ## Tekniker
-*Vilka tekniker kommer att användas? Kommer ni att använda några ramverk? CSS-preprocessors?*
+Teknikerna som kommer att användas för det här projektet är följande:
+* HTML5
+* CSS3
+* JavaScript
+* [Sass](http://sass-lang.com/)
+* [Foundation](http://foundation.zurb.com/)
+* Git & GitHub (självklart)
+
+Kan eventuellt bli så att något server-side språk kommer att användas för formulär och liknande beroende på hur väsentliga de kommer att vara.
 
 ## Begränsningar
-*Eventuella begränsningar i projektet. Kanske kommer viss funktionalitet att fejkas eftersom ni inte besitter kunskaper att skapa detta ännu?*
+Projektet kommer att läggas upp på en fullt fungerade webbserver så att de kommer inte finnas några begränsningar på de viset.
 
 ## Förstudier
-*Eventuellt redan existerande prototyper, användarundersökningar etc. Kanske gör ni om en befintlig webbplats? Beskriv då det här.*
-
-## *Förändra*
-*Lägg gärna till egna rubriker eller förändra strukturen så att den passar ert projekt.*
+Förstudier för detta projektet är bland annat Sass som CSS-preprocessor samt Python som server-side språk om det blir aktuellt.
 
 ## Tidsplanering
-*Länka till tidsplaneringen här, eller fäll in som en bild.*
-
+[gantt-chart.pdf](https://github.com/jh222xk/ProjektskelettHT13/doc/gantt-chart.pdf)
