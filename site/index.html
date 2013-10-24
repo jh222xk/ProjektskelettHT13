@@ -5,19 +5,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Webdevelopment Done Right</title>
+    <title>Web Development Reference</title>
     <link rel="stylesheet" href="stylesheets/app.css">
 
     <script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
 <body>
-    <header class="top">
-        <h1 class="site-brand">Webdevelopment Done Right</h1>
-        <nav class="top-bar">
-            <ul class="title-area">
-                <li class="name"></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page">
+        <div class="top">
+            <div class="contain-to-grid sticky">
+                <nav class="top-bar">
+                    <ul class="title-area">
+                        <li class="name"></li>
+                        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                    </ul>
+                    <section class="top-bar-section">
+                        <ul class="left">
+                            <li class="divider"></li>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="divider"></li>
+                            <li class="has-dropdown"><a href="#">Learn</a>
+                            <ul class="dropdown">
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">HTML</a></li>
+                            </ul>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.write('<script src=' +
+            ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+            '.js><\/script>')
+    </script>
+
+    <script src="javascripts/foundation/foundation.js"></script>
+    <script src="javascripts/foundation/foundation.dropdown.js"></script>
+    <script src="javascripts/foundation/foundation.topbar.js"></script>
+    
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 </html>
