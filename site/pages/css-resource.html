@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web Development Reference</title>
+    <link rel="stylesheet" href="../stylesheets/app.css">
+
+    <script src="../javascripts/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="full-width top">
+                <div class="contain-to-grid sticky">
+                    <nav class="top-bar">
+                        <ul class="title-area">
+                            <li class="name"></li>
+                            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                        </ul>
+                        <section class="top-bar-section">
+                            <ul class="left">
+                                <li class="divider"></li>
+                                <li><a href="../index.html">Home</a></li>
+                                <li class="divider"></li>
+                                <li class="has-dropdown active"><a href="#">Learn</a>
+                                <ul class="dropdown">
+                                    <li><a href="html-resource.html">HTML</a></li>
+                                    <li class="active"><a href="html-resource.html">CSS</a></li>
+                                </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="contribute.html">Contribute</a></li>
+                                <li class="divider"></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+            <div class="banner">
+                <h1 class="site-brand"><a href="index.html">Web Development Reference</a></h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="row">
+                <div class="large-8 columns">
+                    <article>
+                        <header>
+                            <h1>
+                                CSS Resource
+                            </h1>
+                        </header>
+                        <p class="introduction">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4 push-8 columns">
+                    <aside>
+                        <h3>Topics</h3>
+                        <span class="label round">A</span>
+                        <ul class="no-bullet">
+                            <li><a href="#attr" class="scrollTo">attr()</a></li>
+                        </ul>
+                        <span class="label round">B</span>
+                        <ul class="no-bullet">
+                            <li><a href="#border-radius" class="scrollTo">border-radius</a></li>
+                            <li><a href="#box-shadow" class="scrollTo">box-shadow</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="large-8 pull-4 columns">
+                    <article>
+                        <h2 id="attr">attr()</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                    </article>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-info">
+            <p>Copyright &copy;</p>
+        </footer>
+    </div>
+
+    <script>
+        document.write('<script src=' +
+            ('__proto__' in {} ? '../javascripts/vendor/zepto' : '../javascripts/vendor/jquery') +
+            '.js><\/script>')
+    </script>
+
+    <script src="../javascripts/foundation/foundation.js"></script>
+    <script src="../javascripts/foundation/foundation.dropdown.js"></script>
+    <script src="../javascripts/foundation/foundation.topbar.js"></script>
+    
+    <script>
+        $(document).foundation();
+                $('.scrollTo').on('click', function(e) {
+    e.preventDefault();
+    Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
+});
+    </script>
+</body>
+</html>
