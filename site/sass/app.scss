@@ -1,12 +1,84 @@
 // Global Foundation Settings
 @import "settings";
 
-// Comment out this import if you don't want to use normalize
 @import "normalize";
 
-// Comment out this import if you are customizing you imports below
 @import "foundation";
 
+@import "mixins";
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+$footer-height: 5em;
+$main-background-color: #202020;
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $main-background-color;
+}
+
+label {
+    font-weight: bold;
+}
+
+.page {
+    min-height: 100%;
+    position: relative;
+}
+
 .site-brand {
-    
+    margin: 0;
+    text-align: left;
+    color: #FFF;
+    font-weight: 300;
+    padding: 40px;
+    a {
+        color: #FFF;
+    }
+}
+
+.top-bar {
+    background: $main-background-color;
+}
+
+// Arrow in topbar.
+.top-bar-section .has-dropdown > a:after {
+    border-color: $primary-color transparent transparent;
+}
+
+.banner {
+    @include gradient($primary-color, #008dde);
+    height: 200px;
+}
+
+.main {
+    padding-bottom: $footer-height;
+}
+
+.sticky {
+    background: $main-background-color;
+}
+
+.footer-info {
+    background: $main-background-color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    p {
+        color: #4C4C4C;
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+// Makes the textareas a little bigger.
+.long-area {
+    height: 200px;
 }
