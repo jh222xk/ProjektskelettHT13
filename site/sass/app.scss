@@ -56,6 +56,7 @@ label {
 .banner {
     @include gradient($primary-color, #008dde);
     height: 200px;
+    border-top: 1px solid #49bdff;
 }
 
 .main {

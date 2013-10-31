@@ -6356,6 +6356,7 @@ label {
   background-image: -webkit-linear-gradient(#2db0fb, #008dde);
   background-image: -o-linear-gradient(#2db0fb, #008dde);
   height: 200px;
+  border-top: 1px solid #49bdff;
 }
 
 .main {
