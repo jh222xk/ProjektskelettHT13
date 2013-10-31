@@ -7,6 +7,8 @@
 
 @import "mixins";
 
+@import "prettify";
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 $footer-height: 5em;
@@ -81,4 +83,46 @@ label {
 // Makes the textareas a little bigger.
 .long-area {
     height: 200px;
+}
+
+pre.prettyprint {
+    padding: 10px;
+}
+
+.rounded-corners {
+    background: #E0E0E0;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; 
+    -o-border-radius: 10px; 
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;      
+    }
+}
+
+.drop-shadow {
+    background: #E0E0E0;
+    height: 100px;
+    -moz-box-shadow: 5px 5px 5px #000;
+    -webkit-box-shadow: 5px 5px 5px #000;
+    -o-box-shadow:  5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #000;
+    text-align: center;
+    line-height: 100px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;      
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    pre.prettyprint {
+        font-size: 12px;
+    }
 }
