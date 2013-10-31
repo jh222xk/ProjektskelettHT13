@@ -6388,36 +6388,34 @@ pre.prettyprint {
   padding: 10px;
 }
 
-.rounded-corners {
+.example, .rounded-corners, .drop-shadow, .text-shadow {
   background: #E0E0E0;
   height: 100px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
   text-align: center;
   line-height: 100px;
 }
-.rounded-corners span {
+.example span, .rounded-corners span, .drop-shadow span, .text-shadow span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
 
+.rounded-corners {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
 .drop-shadow {
-  background: #E0E0E0;
-  height: 100px;
   -moz-box-shadow: 5px 5px 5px #000;
   -webkit-box-shadow: 5px 5px 5px #000;
   -o-box-shadow: 5px 5px 5px #000;
   box-shadow: 5px 5px 5px #000;
-  text-align: center;
-  line-height: 100px;
 }
-.drop-shadow span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+
+.text-shadow span {
+  text-shadow: 2px 2px 2px #000;
 }
 
 @media only screen and (max-width: 768px) {
