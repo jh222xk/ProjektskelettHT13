@@ -54,6 +54,72 @@
                                 HTML Resource
                             </h1>
                         </header>
+                        <p>
+                            This is a reference list for <strong>HyperText Markup Language (HTML)</strong>.
+                            Here will you see a short explanation for each element listed here, 
+                            example code, which browsers and the version of that browser that support
+                            that particularly element.
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4 push-8 columns">
+                    <aside>
+                        <h3>Topics</h3>
+                        <span class="label round">A</span>
+                        <ul class="no-bullet">
+                            <li><a href="#audio" class="scrollTo">audio</a></li>
+                        </ul>
+                        <span class="label round">V</span>
+                        <ul class="no-bullet">
+                            <li><a href="#video" class="scrollTo">video</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="large-8 pull-4 columns">
+                    <article>
+                        <h2 id="audio">audio</h2>
+                        <p>
+                            With the audio tag you can embed audio files without a third-party plugin.
+                        </p>
+
+                        <h3>Example</h3>
+<pre class="prettyprint">
+&lt;audio controls="controls"&gt;
+    &lt;source src="foo.ogg" /&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+</pre>
+                        <h3>Browser support</h3>
+                        <ul class="no-bullet">
+                            <li>Firefox 3.5</li>
+                            <li>Chrome 4.0</li>
+                            <li>Internet Explorer 9.0</li>
+                            <li>Opera 10.5 (Partially 9.5-10.1)</li>
+                            <li>Safari 4.0</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2 id="video">video</h2>
+                        <p>
+                            With the video tag you can embed video files without a third-party plugin.
+                        </p>
+
+                        <h3>Example</h3>
+<pre class="prettyprint">
+&lt;video src="foo.ogg" controls="controls"&gt;
+    Your browser does not support the video element.
+&lt;/video&gt;
+</pre>
+                        <h3>Browser support</h3>
+                        <ul class="no-bullet">
+                            <li>Firefox 3.5</li>
+                            <li>Chrome 4.0</li>
+                            <li>Internet Explorer 9.0</li>
+                            <li>Opera 10.5</li>
+                            <li>Safari 4.0</li>
+                        </ul>
                     </article>
                 </div>
             </div>
@@ -73,9 +139,15 @@
     <script src="../javascripts/foundation/foundation.js"></script>
     <script src="../javascripts/foundation/foundation.dropdown.js"></script>
     <script src="../javascripts/foundation/foundation.topbar.js"></script>
+    <script src="../javascripts/highlighter/prettify.js"></script>
+    <script>prettyPrint();</script>
     
     <script>
         $(document).foundation();
+                $('.scrollTo').on('click', function(e) {
+    e.preventDefault();
+    Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
+});
     </script>
 </body>
 </html>
