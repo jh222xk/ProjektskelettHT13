@@ -6367,6 +6367,17 @@ label {
   background: #202020;
 }
 
+ul.breadcrumbs {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+ul.breadcrumbs a:visited {
+  color: #AA1D90;
+}
+ul.breadcrumbs li.current a {
+  color: #000;
+}
+
 .footer-info {
   background: #202020;
   position: absolute;
@@ -6386,6 +6397,17 @@ label {
 }
 
 pre.prettyprint {
+  display: block;
+  padding: 0.5625em 0.875em 0.5625em;
+  overflow: hidden;
+  margin-left: 0;
+  list-style: none;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #f6f6f6;
+  border-color: gainsboro;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   padding: 10px;
 }
 
