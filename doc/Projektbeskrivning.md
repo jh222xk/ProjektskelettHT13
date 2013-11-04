@@ -2,7 +2,7 @@
 Projektmedlemmar: 
 [jh222xk](https://github.com/jh222xk)
 
-[Exekverbar version av projektet](http://mackmyra.x220.nu:8080/~drager/site/)
+[Körbar version av projektet](http://mackmyra.x220.nu:8080/~drager/site/)
 
 ## Beskrivning av projektet
 Tanken med projektet är att bygga en sajt för att visa upp hur man gör olika saker i olika språk som **CSS3**, **HTML5**

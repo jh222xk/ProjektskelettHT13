@@ -1,5 +1,5 @@
-Projektskelett HT13
+Web Development Reference
 ==================
 
-Ett tomt projekt som forkas för de som gör projekt i kursen. Kursen webbplats:
+Kursens webbplats:
 https://coursepress.lnu.se/kurs/webbteknisk-introduktion/
